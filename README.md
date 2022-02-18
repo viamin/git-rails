@@ -1,15 +1,13 @@
 # Git::Rails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/git/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+`git-rails` is a command line tool for extracting some useful rails-related files from your git working directory.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'git-rails'
+gem 'git-rails', require: false
 ```
 
 And then execute:
@@ -22,7 +20,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Find a full list of command line options by running `git-rails --help`
+
+Some useful commands:
+```
+git-rails --cached
+```
+will output a list of files that are staged in the git working directory.
+
+```
+git-rails --unstaged-only
+```
+will output a list of files that are changed but not staged in the current git working directory.
+
+You can combine options to run a command on the output files:
+```
+git-rails --unstaged-only --run-rspec
+```
+will run the list of unstaged files through rspec (matching `.rb` files to `_spec.rb` files)
+
+```
+git-rails --cached --run-rubocop-autocorrect
+```
+will run staged files through rubocop with the `--safe-auto-correct` option.
 
 ## Development
 
