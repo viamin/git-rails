@@ -3,7 +3,7 @@
 require_relative "lib/git/rails/changes/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "git_rails"
+  spec.name = "git-rails-changes"
   spec.version = Git::Rails::Changes::VERSION
   spec.authors = ["Bart Agapinan"]
   spec.email = ["bart@sonic.net"]
