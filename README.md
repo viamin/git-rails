@@ -1,13 +1,13 @@
-# Git::Rails
+# Git::Rails::Changes
 
-`git_rails` is a command line tool for extracting some useful rails-related files from your git working directory.
+`git-rails-changes` is a command line tool for extracting some useful rails-related files from your git working directory.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'git_rails', require: false
+gem 'git-rails-changes', require: false
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install git_rails
+    $ gem install git-rails-changes
 
 ## Usage
 
@@ -24,23 +24,23 @@ Find a full list of command line options by running `git-rails --help`
 
 Some useful commands:
 ```
-git-rails --cached
+git-rails-changes --cached
 ```
 will output a list of files that are staged in the git working directory.
 
 ```
-git-rails --unstaged-only
+git-rails-changes --unstaged-only
 ```
 will output a list of files that are changed but not staged in the current git working directory.
 
 You can combine options to run a command on the output files:
 ```
-git-rails --unstaged-only --run-rspec
+git-rails-changes --unstaged-only --run-rspec
 ```
 will run the list of unstaged files through rspec (matching `.rb` files to `_spec.rb` files)
 
 ```
-git-rails --cached --run-rubocop-autocorrect
+git-rails-changes --cached --run-rubocop-autocorrect
 ```
 will run staged files through rubocop with the `--safe-auto-correct` option.
 
@@ -52,7 +52,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/viamin/git_rails.
+Bug reports and pull requests are welcome on GitHub at https://github.com/viamin/git-rails-changes.
 
 
 ## License

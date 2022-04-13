@@ -2,6 +2,6 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "git/rails"
+require "git/rails/changes"
 
-exit(Git::Rails.main)
+exit(Git::Rails::Changes.main)

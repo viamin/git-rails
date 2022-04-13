@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative "lib/git/rails/version"
+require_relative "lib/git/rails/changes/version"
 
 Gem::Specification.new do |spec|
   spec.name = "git_rails"
-  spec.version = Git::Rails::VERSION
+  spec.version = Git::Rails::Changes::VERSION
   spec.authors = ["Bart Agapinan"]
   spec.email = ["bart@sonic.net"]
 
   spec.summary = "Find recently changed files in your git working directory and some matching counterparts"
-  spec.description = "git_rails will find files that have changed between branches, that are staged, or modified but not staged. It can find matching rspec tests for rails files"
-  spec.homepage = "https://github.com/viamin/git_rails"
+  spec.description = "git-rails-changes will find files that have changed between branches, that are staged, or modified but not staged. It can find matching rspec tests for rails files"
+  spec.homepage = "https://github.com/viamin/git-rails-changes"
   spec.license = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
   spec.metadata["homepage_uri"] = spec.homepage

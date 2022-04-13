@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-require "git/rails/version"
+require "git/rails/changes/version"
 require "optimist"
 
 module Git
   module Rails
+    module Changes
     class Error < StandardError; end
 
     class << self
@@ -107,4 +108,5 @@ module Git
       end
     end
   end
+end
 end
