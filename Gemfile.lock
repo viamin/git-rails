@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    git-rails-changes (0.1.1)
+    git-rails-changes (0.1.2)
       optimist (~> 3.0)
 
 GEM
