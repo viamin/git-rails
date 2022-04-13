@@ -1,13 +1,13 @@
 # Git::Rails
 
-`git-rails` is a command line tool for extracting some useful rails-related files from your git working directory.
+`git_rails` is a command line tool for extracting some useful rails-related files from your git working directory.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'git-rails', require: false
+gem 'git_rails', require: false
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install git-rails
+    $ gem install git_rails
 
 ## Usage
 
@@ -52,7 +52,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/git-rails.
+Bug reports and pull requests are welcome on GitHub at https://github.com/viamin/git-rails.
 
 
 ## License

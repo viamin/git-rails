@@ -3,13 +3,13 @@
 require_relative "lib/git/rails/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "git-rails"
+  spec.name = "git_rails"
   spec.version = Git::Rails::VERSION
   spec.authors = ["Bart Agapinan"]
   spec.email = ["bart@sonic.net"]
 
   spec.summary = "Find recently changed files in your git working directory and some matching counterparts"
-  spec.description = "git-rails will find files that have changed between branches, that are staged, or modified but not staged. It can find matching rspec tests for rails files"
+  spec.description = "git_rails will find files that have changed between branches, that are staged, or modified but not staged. It can find matching rspec tests for rails files"
   spec.homepage = "https://github.com/viamin/git-rails"
   spec.license = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
