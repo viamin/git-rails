@@ -60,7 +60,7 @@ module Git
           file_list = spec_array.compact.uniq
         end
 
-        file_list = file_list.reject { |file| /\.(yml|json|md)\Z/.match(file) } if opts["code-only"]
+        file_list = file_list.reject { |file| /\.(yml|json|md|enc)\Z/.match(file) } if opts["code-only"]
 
         command = []
         if opts["run-rspec"] || opts["run-rspec-fail-fast"]
